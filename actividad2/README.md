@@ -17,8 +17,19 @@
 
 # Script
 
+Debemos asignarle permisos al archivo 'script.sh' para que el mismo pueda ser ejecutado.
+
 ```sh
-!/bin/bash
+chmod 750 <nombre_script>.sh
+``` 
+
+Para ejecutar el siguiente script es necesario tener instalado el paquete `jq`.
+
+```sh
+# Instalar 'jq'
+
+# Agregar permisos primero:
+# chmod 750 <nombre_script>.sh
 
 # En caso de error: detener el script
 set -o errexit

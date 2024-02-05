@@ -1,4 +1,7 @@
-!/bin/bash
+# Instalar 'jq'
+
+# Agregar permisos primero:
+# chmod 750 <nombre_script>.sh
 
 # En caso de error: detener el script
 set -o errexit
