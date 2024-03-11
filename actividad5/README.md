@@ -18,14 +18,16 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <sys/thread.h>
 
-int main() {
+int main() 
+{
     pid_t pid;
     pid = fork();
     
     if (pid == 0) {
         fork();
-        thread_create(...);
+        thread_create(pid);
     }
     
     fork();
