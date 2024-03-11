@@ -11,7 +11,7 @@
 
 </br>
 
-## Codigo
+## Codigo principal
 
 ```c   
 #include <stdio.h>
